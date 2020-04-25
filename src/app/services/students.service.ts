@@ -15,4 +15,7 @@ export class StudentsService {
       console.log(data);
     })
   }
+  getStudents() {
+    return this.http.get<Students>('http://localhost:3500/students');
+  }
 }
