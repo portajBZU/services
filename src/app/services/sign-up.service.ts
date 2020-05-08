@@ -15,4 +15,5 @@ export class SignUpService {
       console.log(data);
     })
   }
+
 }
