@@ -35,4 +35,8 @@ export class OperationsService {
       console.log(res);
     })
   }
+
+  download (id: any){
+    return this.http.get<any>(`http://localhost:3500/download/${id}`);
+  }
 }
